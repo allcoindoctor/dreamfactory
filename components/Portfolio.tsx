@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import AnimatedElement from './AnimatedElement';
 
 const portfolioItems = [
-  { title: "기업 홍보 영상", img: "https://picsum.photos/seed/corp/800/600", videoUrl: "https://www.youtube.com/embed/UX0-yCVT0_M" },
-  { title: "광고 영상", img: "https://picsum.photos/seed/ad/800/600", videoUrl: "https://www.youtube.com/embed/i_Zy6wse_y0" },
-  { title: "모션그래픽", img: "https://picsum.photos/seed/motion/800/600", videoUrl: "https://www.youtube.com/embed/Caimg4_dC4M" },
-  { title: "교육 콘텐츠", img: "https://picsum.photos/seed/edu/800/600", videoUrl: "https://www.youtube.com/embed/M-q2ajBC-6M" },
-  { title: "제품 소개 영상", img: "https://picsum.photos/seed/product/800/600", videoUrl: "https://www.youtube.com/embed/U89xx_8s_2g" },
-  { title: "행사 스케치", img: "https://picsum.photos/seed/event/800/600", videoUrl: "https://www.youtube.com/embed/zO5t0a2T5vo" },
+  { title: "기업 홍보 영상", img: "https://picsum.photos/seed/corp/800/600", videoUrl: "https://youtu.be/3KtWfp0UopM?si=8JfZKEuXjMyTZlhu" },
+  { title: "광고 영상", img: "https://picsum.photos/seed/ad/800/600", videoUrl: "https://youtu.be/3KtWfp0UopM?si=8JfZKEuXjMyTZlhu" },
+  { title: "모션그래픽", img: "https://picsum.photos/seed/motion/800/600", videoUrl: "https://youtu.be/3KtWfp0UopM?si=8JfZKEuXjMyTZlhu" },
+  { title: "교육 콘텐츠", img: "https://picsum.photos/seed/edu/800/600", videoUrl: "https://youtu.be/3KtWfp0UopM?si=8JfZKEuXjMyTZlhu" },
+  { title: "제품 소개 영상", img: "https://picsum.photos/seed/product/800/600", videoUrl: "https://youtu.be/3KtWfp0UopM?si=8JfZKEuXjMyTZlhu" },
+  { title: "행사 스케치", img: "https://picsum.photos/seed/event/800/600", videoUrl: "https://youtu.be/3KtWfp0UopM?si=8JfZKEuXjMyTZlhu" },
 ];
 
 const PlayIcon = ({ className }: { className?: string }) => (
