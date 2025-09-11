@@ -4,8 +4,8 @@ import AnimatedElement from './AnimatedElement';
 const portfolioItems = [
   { title: "기업 홍보 영상", img: "https://raw.githubusercontent.com/allcoindoctor/dreamfactory/main/img/003.png", videoUrl: "https://www.youtube.com/embed/IOICXUGpSY8?si=zu7lfi0VN0RuhXu2" },
   { title: "광고 영상", img: "https://raw.githubusercontent.com/allcoindoctor/dreamfactory/main/img/007.png", videoUrl: "https://www.youtube.com/embed/ZexeNsdJPK4?si=UmNvxGJYmO1gJgrK" },
-  { title: "모션그래픽", img: "https://raw.githubusercontent.com/allcoindoctor/dreamfactory/main/img/001.png", videoUrl: "https://www.youtube.com/embed/ZexeNsdJPK4?si=UmNvxGJYmO1gJgrK" },
-  { title: "교육 콘텐츠", img: "https://raw.githubusercontent.com/allcoindoctor/dreamfactory/main/img/010.png", videoUrl: "https://www.youtube.com/embed/GRruV96eNsw?si=GZ0A_1PtUGnZAXiP" },
+  { title: "모션그래픽", img: "https://raw.githubusercontent.com/allcoindoctor/dreamfactory/main/img/013.png", videoUrl: "https://www.youtube.com/embed/ZexeNsdJPK4?si=UmNvxGJYmO1gJgrK" },
+  { title: "교육 콘텐츠", img: "https://raw.githubusercontent.com/allcoindoctor/dreamfactory/main/img/014.png", videoUrl: "https://www.youtube.com/embed/GRruV96eNsw?si=GZ0A_1PtUGnZAXiP" },
   { title: "제품 소개 영상", img: "https://raw.githubusercontent.com/allcoindoctor/dreamfactory/main/img/012.png", videoUrl: "https://www.youtube.com/embed/LQJMYwPRDdY?si=TB63MTWI_ClJpyis" },
   { title: "행사 스케치", img: "https://raw.githubusercontent.com/allcoindoctor/dreamfactory/main/img/011.png", videoUrl: "https://www.youtube.com/embed/cYRbkgL9Bdc?si=iiyTTTCepMTWjndz" },
 ];
