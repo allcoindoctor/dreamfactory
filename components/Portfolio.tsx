@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AnimatedElement from './AnimatedElement';
 
 const portfolioItems = [
-  { title: "기업 홍보 영상", img: "https://raw.githubusercontent.com/allcoindoctor/dreamfactory/main/img/003.png", videoUrl: "https://www.youtube.com/embed/IOICXUGpSY8?si=zu7lfi0VN0RuhXu2" },
+  { title: "기업 홍보 영상", img: "https://raw.githubusercontent.com/allcoindoctor/dreamfactory/main/img/003.png", videoUrl: "https://www.youtube.com/embed/8rLjR01VDxc?si=jaKvu1FXEwrjrZ4o" },
   { title: "광고 영상", img: "https://raw.githubusercontent.com/allcoindoctor/dreamfactory/main/img/007.png", videoUrl: "https://www.youtube.com/embed/ZexeNsdJPK4?si=UmNvxGJYmO1gJgrK" },
   { title: "모션그래픽", img: "https://raw.githubusercontent.com/allcoindoctor/dreamfactory/main/img/013.png", videoUrl: "https://www.youtube.com/embed/ZexeNsdJPK4?si=UmNvxGJYmO1gJgrK" },
   { title: "교육 콘텐츠", img: "https://raw.githubusercontent.com/allcoindoctor/dreamfactory/main/img/014.png", videoUrl: "https://www.youtube.com/embed/GRruV96eNsw?si=GZ0A_1PtUGnZAXiP" },
