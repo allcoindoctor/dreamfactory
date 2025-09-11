@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import AnimatedElement from './AnimatedElement';
 
 const portfolioItems = [
-  { title: "기업 홍보 영상", img: "https://picsum.photos/seed/corp/800/600", videoUrl: "https://www.youtube.com/embed/IOICXUGpSY8?si=zu7lfi0VN0RuhXu2" },
-  { title: "광고 영상", img: "https://picsum.photos/seed/ad/800/600", videoUrl: "https://www.youtube.com/embed/ZexeNsdJPK4?si=UmNvxGJYmO1gJgrK" },
-  { title: "모션그래픽", img: "https://picsum.photos/seed/motion/800/600", videoUrl: "https://www.youtube.com/embed/ZexeNsdJPK4?si=UmNvxGJYmO1gJgrK" },
-  { title: "교육 콘텐츠", img: "https://picsum.photos/seed/edu/800/600", videoUrl: "https://www.youtube.com/embed/GRruV96eNsw?si=GZ0A_1PtUGnZAXiP" },
-  { title: "제품 소개 영상", img: "https://picsum.photos/seed/product/800/600", videoUrl: "https://www.youtube.com/embed/LQJMYwPRDdY?si=TB63MTWI_ClJpyis" },
+  { title: "기업 홍보 영상", img: "https://github.com/allcoindoctor/dreamfactory/blob/main/img/003.png", videoUrl: "https://www.youtube.com/embed/IOICXUGpSY8?si=zu7lfi0VN0RuhXu2" },
+  { title: "광고 영상", img: "https://github.com/allcoindoctor/dreamfactory/blob/main/img/007.png", videoUrl: "https://www.youtube.com/embed/ZexeNsdJPK4?si=UmNvxGJYmO1gJgrK" },
+  { title: "모션그래픽", img: "https://github.com/allcoindoctor/dreamfactory/blob/main/img/001.png", videoUrl: "https://www.youtube.com/embed/ZexeNsdJPK4?si=UmNvxGJYmO1gJgrK" },
+  { title: "교육 콘텐츠", img: "https://github.com/allcoindoctor/dreamfactory/blob/main/img/001.png0", videoUrl: "https://www.youtube.com/embed/GRruV96eNsw?si=GZ0A_1PtUGnZAXiP" },
+  { title: "제품 소개 영상", img: "https://github.com/allcoindoctor/dreamfactory/blob/main/img/012.png", videoUrl: "https://www.youtube.com/embed/LQJMYwPRDdY?si=TB63MTWI_ClJpyis" },
   { title: "행사 스케치", img: "https://picsum.photos/seed/event/800/600", videoUrl: "https://www.youtube.com/embed/cYRbkgL9Bdc?si=iiyTTTCepMTWjndz" },
 ];
 
