@@ -55,8 +55,14 @@ const Hero = () => {
         {/*
           The YouTube player will be injected into this div.
           We are using a wrapper to make it fill the container.
+          
+          플레이어가 항상 배경을 채우도록 크기를 조정하는 CSS를 추가합니다.
+          이는 비디오의 16:9 종횡비를 유지하면서 전체 화면을 덮도록 계산된 값입니다.
         */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160vw] h-[90vw] min-w-[100vw] min-h-[56.25vw] sm:min-h-[100vh] sm:min-w-[177.78vh]">
+        <div className="absolute top-1/2 left-1/2 min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2" style={{
+          width: '177.77777778vh', // 16 / 9 = 1.7778
+          height: '56.25vw', // 9 / 16 = 0.5625
+        }}>
           <div ref={videoContainerRef} className="w-full h-full"></div>
         </div>
       </div>
