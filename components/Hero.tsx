@@ -23,7 +23,7 @@ const Hero = () => {
             autoplay: 1,
             mute: 1,
             loop: 1,
-            playlist: 'GRruV96eNsw',
+            playlist: 's2ex0eEOU1k',
             controls: 0,
             showinfo: 0,
             rel: 0,
