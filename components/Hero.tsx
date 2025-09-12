@@ -82,7 +82,7 @@ const Hero = () => {
           영상의 새로운 시대
         </h1>
         <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-gray-400 animate-fade-in-up delay-300">
-          드림팩토리 AI 비디오 프로덕션: 아이디어를 현실로, 상상을 영상으로 만듭니다.
+          드림팩토리는 고객이 원하는 모든 아이디어와 상상을 현실로 만듭니다.
         </p>
         <div className="mt-10 animate-fade-in-up delay-500">
           <a href="#contact" className="inline-block bg-sky-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-sky-600 transform hover:scale-105 transition-all duration-300">
