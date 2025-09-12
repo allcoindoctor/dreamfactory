@@ -1,4 +1,3 @@
-
 import React from 'react';
 import AnimatedElement from './AnimatedElement';
 
@@ -8,7 +7,7 @@ const Profile: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <AnimatedElement className="relative h-full min-h-[400px]">
-             <div className="absolute inset-0 bg-grid-gray-700/[0.1] [mask-image:radial-gradient(50%_50%_at_50%_50%,white,transparent)]"></div>
+            <div className="absolute inset-0 bg-grid-gray-700/[0.1] [mask-image:radial-gradient(50%_50%_at_50%_50%,white,transparent)]"></div>
             <img 
               src="https://raw.githubusercontent.com/allcoindoctor/dreamfactory/main/img/015.png" 
               alt="김도종 프로필" 
@@ -30,7 +29,7 @@ const Profile: React.FC = () => {
               <p>
                 도니캣PFP(Donicat PFP) 파운더로, 2023년 인기리에 방영된 KBS 드라마, 〈비밀의 여자〉에서 선보인 기부 고양이 ‘도니캣’을 창안했습니다. 
               </p>
-<p>
+              <p>
                 쿠키코인 파운더로, 2025년 솔라나기반 밈코인 개발에 참여하였고, <일주일이면 나도 생성AI 전문가>(매일경제신문)를 공동 출간하였습니다. 현재, 생성 AI를 활용한 영상 제작서비스인 드림펙토리를 런칭하였습니다.
               </p>
             </div>
