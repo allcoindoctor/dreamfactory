@@ -9,14 +9,14 @@ const Contact: React.FC = () => {
       <div className="max-w-4xl mx-auto px-6 sm:px-8 text-center relative z-10">
         <AnimatedElement>
           <h2 className="text-4xl sm:text-6xl font-extrabold tracking-tighter text-white">
-            함께 영상의 미래를
+            드림팩토리에서 당신의 상상을
             <br />
-            만들어보세요.
+            현실로 만들어보세요.
           </h2>
         </AnimatedElement>
         <AnimatedElement delay="delay-200">
           <p className="mt-6 text-lg text-gray-400 max-w-2xl mx-auto">
-            프로젝트에 대한 아이디어가 있으신가요? 지금 바로 문의하여 AI 영상 제작의 가능성을 확인해보세요.
+            영상 제작을 의뢰하고 싶으신가요? 지금 바로 문의해 주세요. 4K영상, 8K영상으로 제대로 만들어드립니다.
           </p>
         </AnimatedElement>
         <AnimatedElement delay="delay-400">
@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
               className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:shadow-lg hover:shadow-purple-500/30 transform hover:scale-105 transition-all duration-300"
             >
               <DocumentTextIcon />
-              <span>견적내기 문의</span>
+              <span>견적내기</span>
             </a>
             <a 
               href="https://invite.kakao.com/tc/K1L981rSOY" 
