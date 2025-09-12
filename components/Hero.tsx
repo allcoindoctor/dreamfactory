@@ -1,19 +1,64 @@
-import React from 'react';
-import AnimatedElement from './AnimatedElement';
+import React, { useEffect, useRef } from 'react';
 
-const Hero: React.FC = () => {
-  const videoId = 'z3z_vj_t-hY'; // Abstract tech-style background video
+const Hero = () => {
+  const videoContainerRef = useRef(null);
+  const playerRef = useRef(null);
+
+  useEffect(() => {
+    // Check if the YouTube Iframe Player API script is already loaded
+    if (!window.YT) {
+      // Create and append the script tag
+      const tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      const firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    }
+    
+    // This function will be called by the API script when it's ready
+    window.onYouTubeIframeAPIReady = () => {
+      if (videoContainerRef.current) {
+        playerRef.current = new window.YT.Player(videoContainerRef.current, {
+          videoId: 'GRruV96eNsw',
+          playerVars: {
+            autoplay: 1,
+            mute: 1,
+            loop: 1,
+            playlist: 'GRruV96eNsw',
+            controls: 0,
+            showinfo: 0,
+            rel: 0,
+            modestbranding: 1
+          },
+          events: {
+            'onReady': onPlayerReady
+          }
+        });
+      }
+    };
+
+    return () => {
+      // Clean up the player when the component unmounts
+      if (playerRef.current) {
+        playerRef.current.destroy();
+      }
+    };
+  }, []);
+
+  const onPlayerReady = (event) => {
+    event.target.playVideo();
+  };
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* YouTube Video Background */}
       <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none overflow-hidden">
-     <iframe 
-  src="https://www.youtube.com/embed/GRruV96eNsw?autoplay=1&mute=1&loop=1&playlist=GRruV96eNsw"
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  allowfullscreen
-></iframe>
+        {/*
+          The YouTube player will be injected into this div.
+          We are using a wrapper to make it fill the container.
+        */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160vw] h-[90vw] min-w-[100vw] min-h-[56.25vw] sm:min-h-[100vh] sm:min-w-[177.78vh]">
+          <div ref={videoContainerRef} className="w-full h-full"></div>
+        </div>
       </div>
 
       {/* Dark Overlay for text readability */}
@@ -21,28 +66,23 @@ const Hero: React.FC = () => {
       
       {/* Content */}
       <div className="relative text-center z-10 px-4">
-        <AnimatedElement>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tighter leading-tight">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-indigo-500">
-              생성 AI
-            </span>
-            가 만드는
-            <br />
-            영상의 새로운 시대
-          </h1>
-        </AnimatedElement>
-        <AnimatedElement delay="delay-300">
-          <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-gray-400">
-            드림팩토리 AI 비디오 프로덕션: 아이디어를 현실로, 상상을 영상으로 만듭니다.
-          </p>
-        </AnimatedElement>
-        <AnimatedElement delay="delay-500">
-          <div className="mt-10">
-            <a href="#contact" className="inline-block bg-sky-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-sky-600 transform hover:scale-105 transition-all duration-300">
-              프로젝트 문의하기
-            </a>
-          </div>
-        </AnimatedElement>
+        {/* Using standard HTML for simplicity instead of a separate AnimatedElement component */}
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tighter leading-tight animate-fade-in-up">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-indigo-500">
+            생성 AI
+          </span>
+          가 만드는
+          <br />
+          영상의 새로운 시대
+        </h1>
+        <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-gray-400 animate-fade-in-up delay-300">
+          드림팩토리 AI 비디오 프로덕션: 아이디어를 현실로, 상상을 영상으로 만듭니다.
+        </p>
+        <div className="mt-10 animate-fade-in-up delay-500">
+          <a href="#contact" className="inline-block bg-sky-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-sky-600 transform hover:scale-105 transition-all duration-300">
+            프로젝트 문의하기
+          </a>
+        </div>
       </div>
     </section>
   );
