@@ -8,13 +8,12 @@ const Hero: React.FC = () => {
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* YouTube Video Background */}
       <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none overflow-hidden">
-        <iframe
-          className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2"
-          src={`https://www.youtube.com/embed/GRruV96eNsw?si=uMiHXWz_wJD5MLgu`}
-          frameBorder="0"
-          allow="autoplay=1; encrypted-media"
-          title="Background Video"
-        ></iframe>
+     <iframe 
+  src="https://www.youtube.com/embed/GRruV96eNsw?autoplay=1&mute=1&loop=1&playlist=GRruV96eNsw"
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen
+></iframe>
       </div>
 
       {/* Dark Overlay for text readability */}
