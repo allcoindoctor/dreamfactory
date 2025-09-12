@@ -1,12 +1,27 @@
-
 import React from 'react';
 import AnimatedElement from './AnimatedElement';
 
 const Hero: React.FC = () => {
+  const videoId = 'z3z_vj_t-hY'; // Abstract tech-style background video
+
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-grid-gray-700/[0.1] [mask-image:linear-gradient(to_bottom,white_5%,transparent_90%)]"></div>
-      <div className="text-center z-10 px-4">
+      {/* YouTube Video Background */}
+      <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none overflow-hidden">
+        <iframe
+          className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2"
+          src={`https://www.youtube.com/embed/${ZexeNsdJPK4}?autoplay=1&mute=1&loop=1&playlist=${GRruV96eNsw}&controls=0&showinfo=0&modestbranding=1&iv_load_policy=3&playsinline=1`}
+          frameBorder="0"
+          allow="autoplay; encrypted-media"
+          title="Background Video"
+        ></iframe>
+      </div>
+
+      {/* Dark Overlay for text readability */}
+      <div className="absolute inset-0 bg-black/60"></div>
+      
+      {/* Content */}
+      <div className="relative text-center z-10 px-4">
         <AnimatedElement>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white tracking-tighter leading-tight">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-indigo-500">
