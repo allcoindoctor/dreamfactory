@@ -18,7 +18,7 @@ const Profile: React.FC = () => {
           <AnimatedElement delay="delay-200">
             <h2 className="text-sm font-semibold text-sky-400 uppercase tracking-wider">About Me</h2>
             <p className="mt-2 text-4xl sm:text-5xl font-extrabold tracking-tight text-white">
-              제작자 프로필: 김도종
+              제작자 : 김도종
             </p>
             <div className="mt-8 text-gray-300 space-y-4 text-lg leading-relaxed">
               <p>
@@ -28,7 +28,10 @@ const Profile: React.FC = () => {
                 기획통으로 (주)워크도니 CSO, (사)한국라오스문화유산교류협회 기획이사, 한국추리작가협회 정회원이고, 포블(포스텍 디지털자산과 블록체인 전문가 과정) 4기 출신입니다.
               </p>
               <p>
-                도니캣PFP(Donicat PFP) 파운더로, 2023년 인기리에 방영된 KBS 드라마, 〈비밀의 여자〉에서 선보인 기부 고양이 ‘도니캣’을 창안했고, 생성 AI를 활용한 기획서 작성과 활용 방법을 컨설팅, 서비스를 제공하고 있습니다.
+                도니캣PFP(Donicat PFP) 파운더로, 2023년 인기리에 방영된 KBS 드라마, 〈비밀의 여자〉에서 선보인 기부 고양이 ‘도니캣’을 창안했습니다. 
+              </p>
+<p>
+                쿠키코인 파운더로, 2025년 솔라나기반 밈코인 개발에 참여하였고, 일주일이면 나도 생성AI 전문가(매일경제신문)를 출간하였습니다. 현재, 생성 AI를 활용한 영상 제작서비스인 드림펙토리를 런칭하였습니다.
               </p>
             </div>
           </AnimatedElement>
