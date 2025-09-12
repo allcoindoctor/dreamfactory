@@ -30,7 +30,7 @@ const Services: React.FC = () => {
             제공 서비스
           </p>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-400">
-            생성 AI 기술을 활용하여 다양한 목적과 형태의 영상을 제작합니다.
+            드림팩토리는 생성 AI 기술을 활용하여 고객의 다양한 니즈를 만족시켜드립니다.
           </p>
         </AnimatedElement>
 
