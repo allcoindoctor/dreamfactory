@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
           className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2"
           src={`https://www.youtube.com/embed/GRruV96eNsw?si=uMiHXWz_wJD5MLgu`}
           frameBorder="0"
-          allow="autoplay; encrypted-media"
+          allow="autoplay=1; encrypted-media"
           title="Background Video"
         ></iframe>
       </div>
