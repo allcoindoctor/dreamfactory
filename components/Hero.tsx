@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
       <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none overflow-hidden">
         <iframe
           className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-w-full min-h-full transform -translate-x-1/2 -translate-y-1/2"
-          src={`https://www.youtube.com/embed/${ZexeNsdJPK4}?autoplay=1&mute=1&loop=1&playlist=${GRruV96eNsw}&controls=0&showinfo=0&modestbranding=1&iv_load_policy=3&playsinline=1`}
+          src={`https://www.youtube.com/embed/GRruV96eNsw?si=uMiHXWz_wJD5MLgu`}
           frameBorder="0"
           allow="autoplay; encrypted-media"
           title="Background Video"
