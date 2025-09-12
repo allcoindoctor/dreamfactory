@@ -10,7 +10,7 @@ const Profile: React.FC = () => {
           <AnimatedElement className="relative h-full min-h-[400px]">
              <div className="absolute inset-0 bg-grid-gray-700/[0.1] [mask-image:radial-gradient(50%_50%_at_50%_50%,white,transparent)]"></div>
             <img 
-              src="https://picsum.photos/seed/profile/800/1000" 
+              src="https://raw.githubusercontent.com/allcoindoctor/dreamfactory/main/img/df_001.png" 
               alt="김도종 프로필" 
               className="rounded-2xl w-full h-full object-cover object-center shadow-2xl shadow-sky-900/20"
             />
