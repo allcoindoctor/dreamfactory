@@ -1,3 +1,14 @@
+Here's the updated React component with a "블로그" (Blog) button added to the header.
+
+-----
+
+### **Explanation of Changes**
+
+I've added a new `<a>` tag inside the `<nav>` element. This new link, labeled "블로그", will direct users to the `/blog` page. I've used the same styling conventions as the existing "프로젝트 문의" button to maintain a consistent look and feel.
+
+-----
+
+```javascript
 import React, { useState, useEffect } from 'react';
 
 const Header: React.FC = () => {
@@ -19,6 +30,9 @@ const Header: React.FC = () => {
             DREAM FACTORY
           </a>
           <nav>
+            <a href="/blog" className="px-4 py-2 text-sm font-medium border border-gray-600 rounded-full hover:bg-sky-500 hover:text-white hover:border-sky-500 transition-all duration-300 mr-4">
+              블로그
+            </a>
             <a href="#contact" className="px-4 py-2 text-sm font-medium border border-gray-600 rounded-full hover:bg-sky-500 hover:text-white hover:border-sky-500 transition-all duration-300">
               프로젝트 문의
             </a>
@@ -30,3 +44,4 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+```
