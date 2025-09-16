@@ -23,10 +23,10 @@ const Header: React.FC = () => {
                target="_blank" 
                rel="noopener noreferrer"
                className="px-4 py-2 text-sm font-medium border border-gray-600 rounded-full hover:bg-sky-500 hover:text-white hover:border-sky-500 transition-all duration-300 mr-4">
-              블로그
+              Blog
             </a>
             <a href="#contact" className="px-4 py-2 text-sm font-medium border border-gray-600 rounded-full hover:bg-sky-500 hover:text-white hover:border-sky-500 transition-all duration-300">
-              프로젝트 문의
+              Project
             </a>
           </nav>
         </div>
