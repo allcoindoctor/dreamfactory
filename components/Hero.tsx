@@ -18,12 +18,12 @@ const Hero = () => {
     window.onYouTubeIframeAPIReady = () => {
       if (videoContainerRef.current) {
         playerRef.current = new window.YT.Player(videoContainerRef.current, {
-          videoId: 's2ex0eEOU1k',
+          videoId: '27PSbkN1zi9V4x1p',
           playerVars: {
             autoplay: 1,
             mute: 1,
             loop: 1,
-            playlist: 's2ex0eEOU1k',
+            playlist: '27PSbkN1zi9V4x1p',
             controls: 0,
             showinfo: 0,
             rel: 0,
